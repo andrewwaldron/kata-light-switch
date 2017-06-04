@@ -13,4 +13,13 @@ describe('fewest.moves.kata', function() {
 
     expect(kata.getMinimumCost(matrix)).toEqual(0);
   });
+
+  it('can turn off a corner with lights on', function() {
+    var matrix = [
+      [1, 1, 0],
+      [1, 0, 0]
+    ];
+
+    expect(kata.getMinimumCost(matrix)).toEqual(1);
+  })
 });
