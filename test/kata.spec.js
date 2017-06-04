@@ -5,6 +5,12 @@ describe('fewest.moves.kata', function() {
     subject = kata;
   });
 
-  it('will let us know whether or not it finishes the matrix', function() {
+  it('can handle a matrix where all lights are already off', function() {
+    var matrix = [
+      [0, 0, 0],
+      [0, 0, 0]
+    ];
+
+    expect(kata.getMinimumCost(matrix)).toEqual(0);
   });
 });
